@@ -42,11 +42,12 @@ nav a{
 }
 
 #about-me{
-  margin-right: .5em;
+  margin-right: 1em;
 }
 
 /* Featured Post */
 #featured-post{
+  position: relative;
   min-height: 20em;
   height: fit-content;
   max-height: 25em;
@@ -57,13 +58,24 @@ nav a{
   padding: 1.5em 1em;
   color: white;
   text-shadow: 0 0 black;
-  background-color: black;
+  /* background-color: black;
   background: url("../public/images/featured-post-2.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
+#featured-post img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 
 
 #featured-post p, #featured-post h2{
@@ -74,13 +86,16 @@ nav a{
   font-size: 1rem;
   margin: 0 0 1em 0;
   font-weight: 300;
+  width: fit-content;
+  padding: .25em;
 }
 
 #featured-post h2{
   margin: 0 0 .5em 0;
   font-size: 1.75rem;
   font-weight: 800;
-  width: 80%;
+  width: fit-content;
+  padding: .25em;
 }
 
 #featured-post .post-text{
@@ -89,9 +104,9 @@ nav a{
 }
 
 /* Main */
-main{
+.posts-container{
   grid-row:3/4;
-  padding: 2em 1em;
+  padding: 2em 1em 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -117,6 +132,17 @@ main{
 
 .post .post-text{
   margin-top: .25em;
+}
+
+#load-more{
+    display: block;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .75rem auto 1.5em;
+    color: black;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -206,6 +232,8 @@ footer{
   .post .post-text{
     font-size: 1.25rem;
   }
+
+  /* Footer */
 
   #footer-logo {
     font-size: 1.5rem;
