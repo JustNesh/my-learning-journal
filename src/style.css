@@ -4,14 +4,19 @@
 
 body{
   margin: 0;
-  display: grid;
-  grid-template-rows: 6em auto auto 6em;
+  display: flex;
+  flex-direction: column;
   font-family: "Source Sans 3";
+  line-height: 1.5;
+}
+
+h2{
+  transition: all .5s;
+  cursor: pointer;
 }
 
 /* Nav Bar */
 nav{
-  grid-row: 1/2;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -34,6 +39,12 @@ nav a{
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+nav a:hover{
+  transform: scale(1.1);
 }
 
 #home{
@@ -51,18 +62,13 @@ nav a{
   min-height: 20em;
   height: fit-content;
   max-height: 25em;
-  grid-row: 2/3;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 1.5em 1em;
   color: white;
   text-shadow: 0 0 black;
-  /* background-color: black;
-  background: url("../public/images/featured-post-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
+  background-color: black;
 }
 
 #featured-post img{
@@ -74,12 +80,14 @@ nav a{
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
+  cursor: pointer;
 }
 
 
 #featured-post p, #featured-post h2{
   background-color: rgba(0,0,0,.75);
+  z-index: 1;
 }
 
 #featured-post .date{
@@ -95,17 +103,46 @@ nav a{
   font-size: 1.75rem;
   font-weight: 800;
   width: fit-content;
-  padding: .25em;
+  padding: .25em;  
 }
 
-#featured-post .post-text{
+#featured-post h2:hover{
+  transform: scale(1.025);
+}
+
+#featured-post .subheading{
   font-weight: 400;
   margin: 0 0 0 0;
 }
 
 /* Main */
+
+main{
+  padding: 0 1.5em;
+}
+
+main h3{
+  font-size: 1.25rem;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+main img{
+  width: 100%;
+  border-radius: 35px;
+}
+
+.content-seperator{
+  height: 1px;
+  width: 75%;
+  background-color: black;
+  margin: 0 auto 1em;
+}
+
+
+/* Posts */
 .posts-container{
-  grid-row:3/4;
   padding: 2em 1em 0;
   display: flex;
   flex-direction: row;
@@ -128,9 +165,14 @@ nav a{
 
 .post h2{
   margin: .25em 0 0 0;
+  width: fit-content;
 }
 
-.post .post-text{
+.post h2:hover{
+  transform: scale(1.1);
+}
+
+.post .subheading{
   margin-top: .25em;
 }
 
@@ -147,7 +189,6 @@ nav a{
 
 /* Footer */
 footer{
-  grid-row: 4/5;
   background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
@@ -167,11 +208,18 @@ footer{
   color: rgb(216, 216, 216);
 }
 
+
+/* Blog Classes */
+
+.post-container h4{
+  font-size: 1.125rem;
+}
+
+.post-container{
+  margin-bottom: 1em;
+}
+
 @media (min-width: 1024px){
-  
-  body{
-    grid-template-rows: auto auto auto 10em;
-  }
 
   /* Nav */
   nav img{
@@ -209,13 +257,44 @@ footer{
     padding: .25em;
   }
 
-  #featured-post .post-text{
+  #featured-post .subheading{
     font-size: 1.5rem;
     width: fit-content;
     padding: .25em;
     width: 60%;
   }
   /* Main */
+
+  main{
+    text-align: center;
+    padding: 0 5em;
+    /* background-color: rgba(0,0,0,.25); */
+  }
+  
+  main .date{
+    font-size: 1.25rem;
+  }
+
+  main h2{
+    font-size: 1.75rem;
+  }
+
+  main .subheading{
+    font-size: 1.375rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  main img{
+    width: 50%;
+  }
+
+  /* Posts Container */
+  .post img{
+    min-height: 310px;
+    max-height: 650px;
+  }
+
   .post{
     flex: 1 475px;
     margin: 0 auto;
@@ -229,8 +308,12 @@ footer{
     font-size: 1.75rem;
   }
 
-  .post .post-text{
+  .post .subheading{
     font-size: 1.25rem;
+  }
+
+  #load-more{
+    font-size: 1.5rem;
   }
 
   /* Footer */
@@ -242,4 +325,22 @@ footer{
   #footer-copyright {
     font-size: 1.25rem;
   }
+
+  /* Blog Classes */
+
+  .post-container h4{
+    font-size: 1.5rem;
+  }
+
+  .post-container{
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+  }
+
 }
+
+.hidden{
+  display: none !important;
+}
+
+
