@@ -2,7 +2,7 @@ let postInfo = [
     {
         title:"My new journey as a bootcamp student.",
         date:"July 22, 2025",
-        imagePath:"public/images/featured-post-2.jpg",
+        imagePath:"./public/images/featured-post-2.jpg",
         post: `
             <h4>How I stay committed to learning</h4>
 
@@ -22,7 +22,7 @@ let postInfo = [
     {
         title:"Blog One",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-01.png",
+        imagePath:"./public/images/article-image-01.png",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -34,7 +34,7 @@ let postInfo = [
     {
         title:"Blog Two",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-02.png",
+        imagePath:"./public/images/article-image-02.png",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -46,7 +46,7 @@ let postInfo = [
     {
         title:"Blog Three",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-03.png",
+        imagePath:"./public/images/article-image-03.png",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -58,7 +58,7 @@ let postInfo = [
     {
         title:"Blog Four",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-04.jpg",
+        imagePath:"./public/images/article-image-04.jpg",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -70,7 +70,7 @@ let postInfo = [
     {
         title:"Blog Five",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-05.jpg",
+        imagePath:"./public/images/article-image-05.jpg",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -82,7 +82,7 @@ let postInfo = [
     {
         title:"Blog Six",
         date:"July 22, 2025",
-        imagePath:"public/images/article-image-06.jpg",
+        imagePath:"./public/images/article-image-06.jpg",
         post:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,

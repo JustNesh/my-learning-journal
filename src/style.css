@@ -196,6 +196,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1.5em;
 }
 
 #footer-logo{
@@ -324,6 +325,10 @@ footer{
   }
 
   /* Footer */
+
+  footer{
+    padding: 3em;
+  }
 
   #footer-logo {
     font-size: 1.5rem;
