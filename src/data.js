@@ -5,17 +5,18 @@ let postInfo = [
         imagePath:"./images/featured-post-2.jpg",
         post: `
             <h4>How I stay committed to learning</h4>
-
+            <p>
             I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.
 
             While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.
-
+            </p>
             <h4>How I got started</h4>
-
+            <p>
             I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.
 
             That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.
-        `,
+            </p>
+            `,
         subheading:"After several months of learning in the Frontend Developer Career Path,I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
         uuid:"9ca3793e-e30b-4986-8f72-f1184f1cf333"
     },
@@ -23,9 +24,9 @@ let postInfo = [
         title:"Blog One",
         date:"July 22, 2025",
         imagePath:"./images/article-image-01.png",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -35,9 +36,9 @@ let postInfo = [
         title:"Blog Two",
         date:"July 22, 2025",
         imagePath:"./images/article-image-02.png",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -47,9 +48,9 @@ let postInfo = [
         title:"Blog Three",
         date:"July 22, 2025",
         imagePath:"./images/article-image-03.png",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -59,9 +60,9 @@ let postInfo = [
         title:"Blog Four",
         date:"July 22, 2025",
         imagePath:"./images/article-image-04.jpg",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -71,9 +72,9 @@ let postInfo = [
         title:"Blog Five",
         date:"July 22, 2025",
         imagePath:"./images/article-image-05.jpg",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,
@@ -83,9 +84,9 @@ let postInfo = [
         title:"Blog Six",
         date:"July 22, 2025",
         imagePath:"./images/article-image-06.jpg",
-        post:`I'm excited to start a new learning journey 
+        post:`<p>I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
-            in the Frontend Developer Career Path.`,
+            in the Frontend Developer Career Path.</p>`,
         subheading:`I'm excited to start a new learning journey 
             as a Scrimba Bootcamp student! After several months of learning
             in the Frontend Developer Career Path.`,

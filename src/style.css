@@ -20,6 +20,7 @@ nav{
   display: flex;
   justify-content: start;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 nav img{
@@ -119,11 +120,24 @@ nav a:hover{
 
 main{
   padding: 0 1.5em;
+  background: url("../public/images/page-background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+main h3, main .subheading, main h2, main .date, .post-container *{
+  width: fit-content;
+  padding: .3em; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0,0,0,.9);
 }
 
 main h3{
   font-size: 1.25rem;
-  margin: 0 auto;
+  margin: 0 auto .5em;
   display: block;
   width: fit-content;
 }
@@ -131,6 +145,16 @@ main h3{
 main img{
   width: 100%;
   border-radius: 35px;
+  padding: .15em;
+  background-color: black;
+}
+
+.profile-photo{
+  display: block;
+  width: 75%;
+  margin: 1em auto 0;
+  padding: .15em;
+  background-color: black;
 }
 
 .content-seperator{
@@ -271,11 +295,11 @@ footer{
   main{
     text-align: center;
     padding: 0 5em;
-    /* background-color: rgba(0,0,0,.25); */
   }
   
   main .date{
     font-size: 1.25rem;
+    margin: 0 auto;
   }
 
   main h2{
@@ -283,6 +307,10 @@ footer{
     width: 75%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  main h4{
+    margin: auto;
   }
 
   main .subheading{
@@ -295,6 +323,10 @@ footer{
 
   main img{
     width: 50%;
+  }
+
+  .profile-photo{
+    width: 25%;
   }
 
   /* Posts Container */
@@ -354,6 +386,10 @@ footer{
   }
 
 }
+
+/* .post-container h4{
+  background-color: rgba(255,255,255,.05);
+} */
 
 .hidden{
   display: none !important;

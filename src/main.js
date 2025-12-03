@@ -38,7 +38,6 @@ function handleArticle(event){
     handleNavigation(false,true,false);
     let clickedPost = postInfo.filter((post)=> post.uuid === event.target.dataset.postUuid)[0];
     clickedPost = clickedPost || featuredPost;
-    console.log(clickedPost)
     mainEl.innerHTML = `
     <p class="date">${clickedPost.date}</p>
     <h2 class="title">${clickedPost.title}</h2>
@@ -56,7 +55,30 @@ function handleArticle(event){
 
 function handleAboutMe(){
     handleNavigation(false,false,true);
-    mainEl.innerHTML = "";
+    mainEl.innerHTML = `
+        <img class="profile-photo" src="./images/profile-photo.jfif"}"/>
+        <h2>Hi there! My name is Justin and welcome to my learning journal.</h2>
+        <div class="post-container">
+            <p> After several months of learning in the Frontend Developer Career Path,
+                I've made the big jump over to the Bootcamp to get expert code reviews of
+                my Solo Projects projects and meet like-minded peers.</p>
+            <h4>How I stay commited to learning</h4>
+            <p> I like to think of myself as a lifelong learner. I used to spend hours and
+                hours learning, then try to create simple projects using what I learned or work
+                new techniques into existing projects.</p>
+            <p>While that was fun, I felt like it would be helpful to share what I was learning 
+            and most things about my journey with the world.</p>
+            <h4>How I got started</h4>
+            <p>I started simple and gradually grew my learning journal site. I would take notes
+            about what I was learning. After each learning session, I'd use my notes to not 
+            only reflect on what I learned but also write short summaries of what I learned 
+            using my own words.</p>
+            <p>That helped me grok what I was learning, and I realized that posting my 
+            learning summaries was also helping others learn and stay motivated.</p>
+        </div>
+        <div class="content-seperator"></div>
+        <h3>Recent Posts</h3>
+    `;
 }
 
 function handleHomeButton(){
