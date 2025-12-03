@@ -1,4 +1,5 @@
 import {postInfo,featuredPost,aboutMePost} from "./data";
+import pageBackground from "../public/images/page-background.jpg"
 const postsContainer = document.querySelector("#posts-container");
 const mainEl = document.querySelector("main");
 const basePostsToRender = 3;
@@ -39,6 +40,11 @@ function handleArticle(event){
     let clickedPost = postInfo.filter((post)=> post.uuid === event.target.dataset.postUuid)[0];
     clickedPost = clickedPost || featuredPost;
     mainEl.innerHTML = `
+    <div class="background-image-container">
+        <img src="${pageBackground}"/>
+        <div class="bg-transition-top"></div>    
+        <div class="bg-transition-bottom"></div>
+    </div>
     <p class="date">${clickedPost.date}</p>
     <h2 class="title">${clickedPost.title}</h2>
     <p class="subheading">${clickedPost.subheading}</p>

@@ -1,3 +1,5 @@
+import pageBackground from "../public/images/page-background.jpg";
+
 let postInfo = [
     {
         title:"My new journey as a bootcamp student.",
@@ -111,6 +113,11 @@ const featuredPost = postInfo[postInfo.length - 1];
 postInfo = postInfo.filter((post)=>post!=featuredPost);
 
 const aboutMePost = `
+    <div class="background-image-container">
+            <img src="${pageBackground}"/>
+            <div class="bg-transition-top"></div>    
+            <div class="bg-transition-bottom"></div>
+        </div>
     <h2>Hi there! My name is Justin and welcome to my learning journal.</h2>
     <img class="profile-photo" src="./images/profile-photo.jfif"}"/>
         <div class="post-container">
