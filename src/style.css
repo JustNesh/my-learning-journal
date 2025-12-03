@@ -180,7 +180,6 @@ main img{
   width: 100%;
   position: absolute;
   height: 100px;
-  bottom: 100;
   left:0;
   right: 0;
   top: 0;
@@ -194,8 +193,7 @@ main img{
   bottom: 0;
   left:0;
   right: 0;
-  top: 100;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.40)80%,rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.80) 80%,rgba(255, 255, 255, 1) 100%);
 }
 
 .profile-photo{
@@ -375,7 +373,7 @@ footer{
   }
 
   .bg-transition-bottom{
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.90)80%,rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.9) 80%,rgba(255, 255, 255, 1) 100%);
   }
 
   .profile-photo{
