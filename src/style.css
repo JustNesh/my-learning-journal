@@ -120,7 +120,8 @@ nav a:hover{
 
 main{
   padding: 0 1.5em;
-  background: url("../public/images/page-background.jpg");
+  /* background: url("../public/images/page-background.jpg"); */
+  background: linear-gradient(to right, rgb(122, 121, 121) 0%, white 50%, rgb(122, 121, 121) 100%);
   background-position: center;
   background-size: cover;
   color: white;
