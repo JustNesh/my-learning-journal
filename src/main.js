@@ -56,8 +56,8 @@ function handleArticle(event){
 function handleAboutMe(){
     handleNavigation(false,false,true);
     mainEl.innerHTML = `
-        <img class="profile-photo" src="./images/profile-photo.jfif"}"/>
-        <h2>Hi there! My name is Justin and welcome to my learning journal.</h2>
+    <h2>Hi there! My name is Justin and welcome to my learning journal.</h2>
+    <img class="profile-photo" src="./images/profile-photo.jfif"}"/>
         <div class="post-container">
             <p> After several months of learning in the Frontend Developer Career Path,
                 I've made the big jump over to the Bootcamp to get expert code reviews of

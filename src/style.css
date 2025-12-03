@@ -20,11 +20,11 @@ nav{
   display: flex;
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid black;
+  height: 4.5em;
 }
 
 nav img{
-  width: 1.125em;
+  width: 1.75em;
   margin-left: 1em;
 }
 
@@ -133,6 +133,7 @@ main h3, main .subheading, main h2, main .date, .post-container *{
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0,0,0,.9);
+  letter-spacing: .05em;
 }
 
 main h3{
@@ -299,12 +300,12 @@ footer{
   
   main .date{
     font-size: 1.25rem;
-    margin: 0 auto;
+    margin: 1em auto 0;
   }
 
   main h2{
     font-size: 1.75rem;
-    width: 75%;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
   }
@@ -379,7 +380,8 @@ footer{
   .post-container{
     margin-bottom: 1em;
     font-size: 1.5rem;
-    width: 75%;
+    width: fit-content;
+    max-width: 70%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
