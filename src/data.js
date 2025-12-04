@@ -94,6 +94,34 @@ let postInfo = [
             in the Frontend Developer Career Path.`,
         uuid:"4d5be919-537c-4bdb-b090-2a632badfad5"
     },
+    {
+        title:"CSS Grid",
+        date:"November 30th, 2025",
+        imagePath:"./images/css-grid-background.jpg",
+        author:"Aleksandr Slavich",
+        post:`  <h4>Summary</h4>
+                <p>This is another way to organize your items in a way to make it look nice. Very similar to flexbox, and not a replacement for it. There's a time and a place for both, and you can use both for items. For example, you can have a body grid, but then have flex containers within that body grid.</p>
+                <h4>Grid-Template-Columns & Grid-Template-Rows</h4>
+                <p>There are explicit and implicit columns. Rows are often implicit and we don't need to always explicitly declare them, however, columns do need to be explicitly stated to achieve the format we want. 
+                That being said, the way we declare how many columns we want is with the property Grid-Template-Columns on the grid-container class.</p>
+                <pre>
+                    <code>
+.grid-container{
+/* This means that there are 3 columns each divided evenly.*/
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Optionally we can also do this*/
+
+.grid-container{
+    grid-template-columns: repeat(3, 1fr)
+}
+                    </code>
+                </pre>`,
+subheading:`CSS Grid. A simple tool that can lead to complex
+designs.`,
+uuid:"4ad256d7-bb1d-48dd-8214-d85241e34fce"
+    }
 ].reverse();
 
 const subheadingSize = 30;  

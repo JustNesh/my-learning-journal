@@ -1,3 +1,11 @@
+:root{
+  --primary-color: #a3b18a;
+  --secondary-color: #3a5a40;
+  --text-color: #344e41;
+  --background-color: #dad7cd;
+  --container-color: #588157;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -8,6 +16,7 @@ body{
   flex-direction: column;
   font-family: "Source Sans 3";
   line-height: 1.5;
+  background-color: var(--background-color);
 }
 
 h2{
@@ -17,6 +26,8 @@ h2{
 
 /* Nav Bar */
 nav{
+  background-color: var(--primary-color);
+  color: var(--text-color);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -67,9 +78,9 @@ nav a:hover{
   flex-direction: column;
   justify-content: end;
   padding: 1.5em 1em;
-  color: white;
+  /* color: white; */
+  color: var(--text-color);
   text-shadow: 0 0 black;
-  background-color: black;
 }
 
 #featured-post img{
@@ -87,7 +98,8 @@ nav a:hover{
 
 
 #featured-post p, #featured-post h2{
-  background-color: rgba(0,0,0,.75);
+  background-color: var(--background-color);
+  border-radius: .75em;
   z-index: 1;
 }
 
@@ -120,18 +132,21 @@ nav a:hover{
 
 main{
   padding: 0 1.5em;
-  color: white;
+  color: var(--text-color);
   text-align: center;
   position: relative;
 }
 
-main h3, main .subheading, main h2, main .date, .post-container *{
+main .subheading, main h2, main .date, .post-container *{
   width: fit-content;
   padding: .3em .6em; 
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0,0,0,.9);
+  text-shadow: 0 0 black;
+  /* background-color: #03045e90; */
+  background-color: var(--background-color);
   letter-spacing: .05em;
+   border-radius: 1em;
 }
 
 main .title{
@@ -139,18 +154,38 @@ main .title{
 }
 
 main h3{
+   text-shadow: 0 0 black;
   font-size: 1.25rem;
   margin: 0 auto .5em;
   display: block;
   width: fit-content;
   padding: .3em .6em;
+  background-color: var(--background-color);
+  letter-spacing: .05em;
+}
+
+pre code{
+  /* padding: .1em; */
+  text-align: left;
+  width: fit-content;
+  object-fit: contain;
+  display: block;
+  background: #f5f5f5;
+  border-radius: 5px;
+  font-size: .875rem;
+}
+
+pre{
+  overflow-x: auto;
+  white-space:pre-wrap;
 }
 
 main img{
   width: 100%;
   border-radius: 35px;
   padding: .15em;
-  background-color: black;
+  /* background-color: black; */
+  background-color: var(--container-color);
 }
 
 .background-image-container{
@@ -183,7 +218,7 @@ main img{
   left:0;
   right: 0;
   top: 0;
-  background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(255,255,255,.4) 70%,rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to top, #FFFFFF00 0%, var(--primary-color,10) 100%);
 }
 
 .bg-transition-bottom{
@@ -193,7 +228,7 @@ main img{
   bottom: 0;
   left:0;
   right: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.80) 80%,rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, #FFFFFF00 0%, var(--background-color,10) 100%);
 }
 
 .profile-photo{
@@ -201,13 +236,15 @@ main img{
   width: 75%;
   margin: 1em auto 0;
   padding: .15em;
-  background-color: black;
+  /* background-color: black; */
+  background-color: var(--background-color);
 }
 
 .content-seperator{
-  height: 1px;
+  height: 2px;
   width: 75%;
-  background-color: black;
+  /* background-color: black; */
+  background-color: var(--secondary-color);
   margin: 0 auto 1em;
 }
 
@@ -219,6 +256,7 @@ main img{
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2em;
+  color: var(--text-color);
 }
 
 .post{
@@ -255,14 +293,15 @@ main img{
     font-size: 1rem;
     font-weight: 600;
     margin: .75rem auto 1.5em;
-    color: black;
+    color: var(--text-color);
     text-decoration: underline;
     cursor: pointer;
 }
 
 /* Footer */
 footer{
-  background-color: rgb(34, 34, 34);
+  /* background-color: rgb(34, 34, 34); */
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,13 +312,16 @@ footer{
 #footer-logo{
   font-size: 1rem;
   margin: 0;
-  color: white;
+  color: var(--text-color);
+  font-weight: 700;
 }
 
 #footer-copyright{
   margin: 0;
   font-size: .75rem;
-  color: rgb(216, 216, 216);
+  /* color: rgb(216, 216, 216); */
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 
@@ -373,7 +415,7 @@ footer{
   }
 
   .bg-transition-bottom{
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.9) 80%,rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,var(--background-color) 100%);
   }
 
   .profile-photo{
@@ -436,6 +478,10 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* .post-container p{
+    border-radius: 1em;
+  } */
 
 }
 
