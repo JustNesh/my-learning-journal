@@ -260,7 +260,8 @@ main img{
 }
 
 .post{
-  flex:1 350px;
+  width: 100%;
+  /* flex:1 350px; */
 }
 
 .post img{
@@ -333,6 +334,15 @@ footer{
 
 .post-container{
   margin-bottom: 1em;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .post{
+    width: calc(50% - 2em);
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 1024px){
@@ -425,12 +435,13 @@ footer{
   /* Posts Container */
   .post img{
     min-height: 310px;
-    max-height: 650px;
+    max-height: 750px;
   }
 
   .post{
-    flex: 1 475px;
+    /* flex: 1 450px; */
     margin: 0 auto;
+    width: calc(33% - 2em);
   }
 
   .post .date{

@@ -121,7 +121,19 @@ grid-template-columns: 1fr 1fr 1fr;
 subheading:`CSS Grid. A simple tool that can lead to complex
 designs.`,
 uuid:"4ad256d7-bb1d-48dd-8214-d85241e34fce"
-    }
+    },
+    {
+        title:"Blog Six",
+        date:"July 22, 2025",
+        imagePath:"./images/article-image-06.jpg",
+        post:`<p>I'm excited to start a new learning journey 
+            as a Scrimba Bootcamp student! After several months of learning
+            in the Frontend Developer Career Path.</p>`,
+        subheading:`I'm excited to start a new learning journey 
+            as a Scrimba Bootcamp student! After several months of learning
+            in the Frontend Developer Career Path.`,
+        uuid:"4d5be919-537c-4bdb-b090-2a632badfad5"
+    },
 ].reverse();
 
 const subheadingSize = 30;  
