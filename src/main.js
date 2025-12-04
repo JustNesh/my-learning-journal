@@ -1,6 +1,7 @@
 import {postInfo,featuredPost,aboutMePost} from "./data";
 import pageBackground from "../public/images/page-background.jpg"
 const postsContainer = document.querySelector("#posts-container");
+const loadButton =  document.querySelector("#load-more");
 const mainEl = document.querySelector("main");
 const basePostsToRender = 3;
 const amountOfPostsToAdd = 3;
@@ -72,7 +73,7 @@ function handleLoadButton(){
     const currentPostsLength = postsContainer.children.length;;
     //If there's no more posts
     if(currentPostsLength === postInfo.length){
-        alert("bitch stop there's no more posts");
+        return
     }
     //If there's more posts, but less than we want to add. So just give us the rest.
     else if((currentPostsLength + amountOfPostsToAdd) > postInfo.length){
@@ -97,8 +98,10 @@ function renderFeaturedPost(){
 
 function renderPosts(amount){
     let output = "";
+    loadButton.textContent = "Load More";
     if(amount>=postInfo.length){
-        amount = postInfo.length
+        amount = postInfo.length;
+        loadButton.textContent = "No More Content!";
     }
 
     for(let i=0; i<amount; i++){

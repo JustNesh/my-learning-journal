@@ -434,7 +434,7 @@ footer{
 
   /* Posts Container */
   .post img{
-    min-height: 310px;
+    /* min-height: 70%; */
     max-height: 750px;
   }
 
