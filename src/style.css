@@ -377,6 +377,10 @@ footer{
     font-size: 1.25rem;
   }
 
+  .post-image{
+    width: 75%;
+  }
+
   .profile-photo{
     width: 50%;
   }
@@ -497,6 +501,11 @@ footer{
 
   .bg-transition-bottom{
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,var(--background-color) 100%);
+  }
+
+  .post-image{
+    width: 50%;
+    max-width: 1000px;
   }
 
   .profile-photo{

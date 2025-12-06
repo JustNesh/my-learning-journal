@@ -114,7 +114,7 @@ grid-template-columns: 1fr 1fr 1fr;
 /* Optionally we can also do this*/
 
 .grid-container{
-    grid-template-columns: repeat(3, 1fr);grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
 }
                     </code>
                 </pre>`,

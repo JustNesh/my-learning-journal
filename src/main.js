@@ -49,7 +49,7 @@ function handleArticle(event){
     <p class="date">${clickedPost.date}</p>
     <h2 class="title">${clickedPost.title}</h2>
     <p class="subheading">${clickedPost.subheading}</p>
-    <img src="${clickedPost.imagePath}"/>
+    <img class="post-image" src="${clickedPost.imagePath}"/>
     <div class="post-container">${clickedPost.post}</div>
     <div class="content-seperator"></div>
     <h3>Recent Posts</h3>
