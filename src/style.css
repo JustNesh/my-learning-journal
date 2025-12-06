@@ -155,7 +155,7 @@ main .title{
 }
 
 main h3{
-   text-shadow: 0 0 black;
+  text-shadow: 0 0 black;
   font-size: 1.25rem;
   margin: 0 auto .5em;
   display: block;
@@ -165,21 +165,31 @@ main h3{
   letter-spacing: .05em;
 }
 
-pre code{
-  /* padding: .1em; */
+.post-container pre{
+  background-color: var(--background-color);
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  white-space: no-wrap;
+  height: min-content;
+}
+
+.post-container pre:hover{
+  overflow-x: auto;
+}
+
+.post-container pre code {
+  background-color: var(--primary-color);
+  text-shadow: 0 0 black;
   text-align: left;
   width: fit-content;
   object-fit: contain;
   display: block;
-  background: #f5f5f5;
   border-radius: 5px;
   font-size: .875rem;
 }
 
-pre{
-  overflow-x: auto;
-  white-space:pre-wrap;
-}
 
 main img{
   width: 100%;
@@ -339,11 +349,71 @@ footer{
 
 /* Tablets */
 @media (min-width: 768px) {
+
+  /* Nav */
+  nav img{
+    font-size: 1.5rem;
+  }
+
+  nav h1{
+    font-size: 1.5rem;
+  }
+
+  #home, #about-me{
+    font-size: 1.125rem;
+  }
+
+  /* Main */
+
+  main .date{
+    font-size: 1.125rem;
+  }
+
+  main h2{
+    font-size: 1.75rem;
+  }
+
+  main .subheading{
+    font-size: 1.25rem;
+  }
+
+  .profile-photo{
+    width: 50%;
+  }
+  
+  
+  /* Main Post */
+
+  .post-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post-container pre{
+    max-width: 550px;
+  }
+
+  .post-container h4{
+    font-size: 1.5rem;
+  }
+
+  .post-container p{
+    font-size: 1.25rem;
+  }
+
+  .post-container pre code{
+    font-size: 1rem;
+  }
+
+  /* Posts Container */
+
   .post{
     width: calc(50% - 2em);
     margin-right: auto;
     margin-left: auto;
   }
+
+
 }
 
 @media (min-width: 1024px){
@@ -422,7 +492,7 @@ footer{
   }
 
   main img{
-    width: 50%;
+    width: 75%;
   }
 
   .bg-transition-bottom{
@@ -431,6 +501,7 @@ footer{
 
   .profile-photo{
     width: 25%;
+    max-width: 500px;
   }
 
   /* Posts Container */
@@ -455,6 +526,10 @@ footer{
 
   .post .subheading{
     font-size: 1.25rem;
+  }
+
+  .post-container pre{
+    max-width: 700px;
   }
 
   #load-more{
