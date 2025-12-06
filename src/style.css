@@ -71,12 +71,12 @@ nav a:hover{
 /* Featured Post */
 #featured-post{
   position: relative;
-  min-height: 20em;
+  min-height: 26em;
   height: fit-content;
-  max-height: 25em;
+  max-height: 30em;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   padding: 1.5em 1em;
   /* color: white; */
   color: var(--text-color);
@@ -108,7 +108,7 @@ nav a:hover{
   margin: 0 0 1em 0;
   font-weight: 300;
   width: fit-content;
-  padding: .25em;
+  padding: .5em;
 }
 
 #featured-post h2{
@@ -126,6 +126,7 @@ nav a:hover{
 #featured-post .subheading{
   font-weight: 400;
   margin: 0 0 0 0;
+  padding: .5em;
 }
 
 /* Main */
