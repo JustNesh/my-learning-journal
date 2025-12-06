@@ -117,7 +117,8 @@ grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
                     </code>
-                </pre>`,
+                </pre>
+                <p>If we have 6 items in a grid-container there will automatically be 2 rows and 3 columns. The columns are explicit, because we stated so, and the rows are implicit because we never stated such.</p>`,
 subheading:`CSS Grid. A simple tool that can lead to complex
 designs.`,
 uuid:"4ad256d7-bb1d-48dd-8214-d85241e34fce"
